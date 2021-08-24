@@ -1,0 +1,567 @@
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #151e2d;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: RGB(33,47,70);
+}
+.conteudo{
+    width: 1300px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}
+#logo{
+    width: 200px;
+    height: inherit;
+
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+#psgLogo{
+    width: 70px;
+    height: 70px;
+}
+#menu{
+    width: 750px;
+    float: left;
+}
+#listMenu{
+    width: inherit;
+    height: 70px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    padding-top: 13px;
+}
+#listMenu li{
+    width: auto;
+    height: 50px;
+    float: left;
+    list-style: none;
+    font-family: arial;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-top: 2px;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+#listMenu li:hover{
+    background-color: #3e5882;
+    cursor: pointer;
+    border-radius: 120px;
+    transition: 0.8s;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#titulo{
+    width: 350px;
+    height: 80px;
+
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.5em;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 15px;
+    color: white;
+}
+#fundoCabecalho{
+    width: 100%;
+    height: 80px;
+}
+#banner{
+    width: 100%;
+    height: 650px;
+    background-image: url(../Imagens/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    transition-duration: 1s;
+}
+#overflowTeste{
+    overflow: hidden;
+}
+#banner:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+#textoBanner{
+    width: 100%;
+    height: 650px;
+    background-color: RGBA(0,0,0,0.2)
+}
+#textoBanner p{
+    font-family: arial;
+    color: white;
+    text-align: center;
+    font-size: 6em;
+    padding-top: 200px;
+    box-sizing: border-box;
+    text-shadow: 10px 15px 8px black;
+}
+
+h2{
+    color: white;
+    font-family: arial;
+    font-size: 2.5em;
+    text-align: center;
+}
+#titulosPsg{
+    height: 620px;
+    width: 100%;
+}
+#bloco2{
+    width: 1300px;
+    height: 450px;
+    box-sizing: border-box;
+}
+#imgFundo1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #151e2d;
+    overflow: hidden;
+}
+#imgFundo1:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.15;
+    background-image: url(../Imagens/trophee.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#bloco2 h2{
+    padding-bottom: 20px;
+}
+.conteudo h2{
+    padding-top: 100px;
+    text-shadow: 10px 7px 10px black;
+}
+#margem{
+    margin-left: 82px;
+    width: auto;
+    height: auto;
+}
+.caixaMaior{
+    width: 360px;
+    height: 155px;
+    background-color: #374859;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    border: solid 1px #7d7d7d;
+    border-radius: 15px;
+    transition-duration: 1s;
+    overflow: hidden;
+    position: relative;
+    &::after {
+        animation: caixa-maior 5s ease forwards;
+       background-color: #157bad;
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+    }
+}
+@keyframes caixa-maior{
+    from{
+        transform: translateX(-101%);
+    }
+    to{
+        transform: translateX(101%)
+    }
+}
+.caixaMaior:hover{
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.descTitulo{
+    height: 35px;
+    width: inherit;
+    border-bottom: solid 1px #7d7d7d;
+}
+
+.descTitulo p{
+    font-family: arial;
+    font-size: 1em;
+    padding-left: 10px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    color: white;
+}
+.imagens{
+    height: 120px;
+    width: 120px;
+    float: left;
+    text-align: center;
+    border-right: solid 1px #7d7d7d;
+    float: left;
+}
+.confImg{
+    margin-top: 20px;
+}
+.nTitulos{
+    width: 225px;
+    height: 120px;
+    float: left;
+
+}
+.nTitulos p{
+    font-family: arial;
+    font-size: 1em;
+    padding-top: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: white;
+    line-height: 1.4;
+}
+#uclImg{
+    margin-top: 15px;
+    width: 90px;
+    height: 90px;
+}
+#jogadores{
+    width: 100%;
+    height: 678px;
+}
+#imgFundo h2{
+    color: white;
+    font-family: arial;
+    font-size: 2.5em;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 15px;
+    background: none;
+}
+
+#bloco3{
+    width: 1300px;
+    height: 600px;
+
+/*
+    background-image: url(../Imagens/psg.webp) opacity: 0.5;
+    background-position: center;
+    background-attachment: fixed;
+*/
+}
+#imgFundo2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #151e2d;
+    overflow: hidden;
+}
+#imgFundo2:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.15;
+    background-image: url(../Imagens/parcdp.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.jogImg{
+    width: 335px;
+    height: 500px;
+    padding-top: 35px;
+    float: left;
+    position: relative;
+    z-index: 2;
+    transition-duration: 1.2s;
+}
+.jogImg:hover{
+    transform: scale(1.12);
+    transition: 1.2s;
+}
+#nomeJogs{
+    width: 630px;
+    height: 490px;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+#imgFundo:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url(../Imagens/parcdp.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+.caixaJogsL{
+    width: 280px;
+    min-height: 100px;
+    height: auto;
+    border: solid 1px #7d7d7d;
+    float: left;
+    margin-bottom: 8px;
+    margin-left: 18px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.caixaJogsR{
+    width: 280px;
+    min-height: 100px;
+    height: auto;
+    border: solid 1px #7d7d7d;
+    float: right;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+h3{
+    font-family: arial;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-bottom: solid 1px #7d7d7d;
+    background-color: #353e4d;
+    border-radius: 10px;
+}
+.formatJogs{
+    font-family: arial;
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-bottom: solid 1px #7d7d7d;
+    border-radius: 10px;
+}
+#imgFundo3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #151e2d;
+    overflow: hidden;
+}
+#imgFundo3:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.15;
+    background-image: url(../Imagens/psg-time-imago-onefootball.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#recordes{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    z-index: 2;
+    transition-duration: 1.2s;
+}
+#bloco4 h2{
+    color: white;
+    font-family: arial;
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+#bloco4{
+    width: 1300px;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    transition-duration: 1.2s;
+}
+.jogImg1{
+    width: 290px;
+    height: 495px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    float: left;
+    
+}
+#jogImgV{
+    margin-left: 3px;
+    margin-right: 2px;
+    width: 290px;
+    height: 495px;
+    box-sizing: border-box;
+    padding-top: 42px;
+    float: left;
+}
+#jogImgC{
+    margin-left: 5px;
+    width: 290px;
+    height: 495px;
+    box-sizing: border-box;
+    padding-top: 48px;
+    float: left;
+}
+.textoRecordes{
+    margin-top: 30px;
+    width: 210px;
+    height: 410px;
+    float: left;
+/*    border: solid 1px #7d7d7d;*/
+}
+.textoRecordes2{
+    margin-top: 70px;
+    width: 210px;
+    height: 410px;
+    float: left;
+/*    border: solid 1px #7d7d7d;*/
+}
+#confImg2{
+    
+}
+.recCima{
+    margin-bottom: 18px;
+    border-top: solid 1px #7d7d7d;
+    border-left: solid 1px #7d7d7d;
+    border-right: solid 1px #7d7d7d;
+    border-radius: 7px;
+}
+.recBaixo{
+    border-top: solid 1px #7d7d7d;
+    border-left: solid 1px #7d7d7d;
+    border-right: solid 1px #7d7d7d;
+    border-radius: 7px;
+}
+.textoRecordes h3, .textoRecordes2 h3{
+    font-family: arial;
+    height: 33px;
+    color: white;
+    padding-left: 0px;
+    padding-top: 6px;
+    box-sizing: border-box;
+    border-bottom: solid 1px #7d7d7d;
+    background-color: #353e4d;
+    text-align: center;
+    border-radius: 7px;
+}
+.textoRecordes p, .textoRecordes2 p{
+    font-family: arial;
+    color: white;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 1em;
+    padding-top: 5px;
+    border-bottom: solid 1px #7d7d7d;
+    border-radius: 7px;
+}
+footer{
+    width: 100%;
+    height: 480px;
+    background-color: #151d2b;
+    margin-left: auto;
+    margin-right: auto;
+}
+#dadosAdc{
+    width: 1300px;
+    height: inherit;
+}
+#patrocinios{
+    width: inherit;
+    height: 290px;
+    border-bottom: solid 3px red;
+}
+.imgsPatr{
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+    width: 1100px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+.formatPatr{
+    height: 80px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+#info{
+    width: inherit;
+    height: 210px;
+}
+#dadosPsg{
+    margin-left: auto;
+    margin-right: auto;
+    height: inherit;
+    width: 1150px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.topics{
+    float: left;
+    width: 200px;
+    min-height: 50px;
+    height: auto;
+    padding: 15px;
+}
+h4{
+    color: white;
+    font-family: arial;
+    padding-bottom: 20px;
+}
+.topics p {
+    color: #979ca6;
+    font-family: arial;
+    box-sizing: border-box;
+    padding-left: 2px;
+    padding-bottom: 15px;
+}
+.formatRS{
+    height: 30px;
+    padding-right: 7px;
+}
